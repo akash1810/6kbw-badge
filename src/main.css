@@ -39,7 +39,7 @@ header h1 {
 
 a {
   display: inline;
-  padding: 8px 16px;
+  padding: 0 16px;
   text-decoration: none;
   background-color: #000;
   color: #fff;
@@ -48,13 +48,38 @@ a {
   line-height: 50px;
 }
 
+a:hover[href] {
+  background-color: #F0F0F0;
+  color: #000;
+}
+
 a:not([href]) {
   cursor: not-allowed;
   opacity: 0.8;
 }
 
-.container {
+form {
+  background-color: #F0F0F0;
   padding: var(--spacing);
+}
+
+label,
+input {
+  font-size: 25px;
+  display: block;
+}
+
+input {
+  margin-bottom: var(--spacing);
+  width: 100%;
+  border: 0;
+  padding: 0;
+}
+
+.content {
+  margin: 0 auto;
+  width: 500px;
+  padding-top: calc(var(--spacing) * 3);
 }
 
 canvas {
